@@ -1,0 +1,95 @@
+Create a category with the following fields:
+NAME: iPhone XR Repair Services
+DESCRIPTION: iPhone XR Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META TITLE: iPhone XR Repair Services
+META DESCRIPTION: iPhone XR Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META KEYWORDS: iPhone XR Repair
+FRIENDLY URL: iPhone-XR-repair-services
+
+
+Create a category with the following fields:
+NAME: iPhone 11 Repair Services
+DESCRIPTION: iPhone 11 Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META TITLE: iPhone 11 Repair Services
+META DESCRIPTION: iPhone 11 Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META KEYWORDS: iPhone 11 Repair
+FRIENDLY URL: iPhone-11-repair-services
+
+
+Create a category with the following fields:
+NAME: iPhone 11 Pro Repair Services
+DESCRIPTION: iPhone 11 Pro Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META TITLE: iPhone 11 Pro Repair Services
+META DESCRIPTION: iPhone 11 Pro Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META KEYWORDS: iPhone 11 Pro Repair
+FRIENDLY URL: iPhone-11-Pro-repair-services
+
+
+Create a category with the following fields:
+NAME: iPhone 11 Pro Max Repair Services
+DESCRIPTION: iPhone 11 Pro Max Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META TITLE: iPhone 11 Pro Max Repair Services
+META DESCRIPTION: iPhone 11 Pro Max Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META KEYWORDS: iPhone 11 Pro Max Repair
+FRIENDLY URL: iPhone-11-Pro-Max-repair-services
+
+IPADS*******************************************
+
+Create a category with the following fields:
+NAME: 12.9-inch iPad Pro (2018) Repair Services
+DESCRIPTION: 12.9-inch iPad Pro (2018) Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META TITLE: 12.9-inch iPad Pro (2018) Repair Services
+META DESCRIPTION: 12.9-inch iPad Pro (2018) Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META KEYWORDS: 12.9-inch iPad Pro (2018) Repair
+FRIENDLY URL: 12.9-inch-iPad-Pro-(2018)-repair-services
+
+
+Create a category with the following fields:
+NAME: 7.9-inch iPad Mini 5 (2019) Repair Services
+DESCRIPTION: 7.9-inch iPad Mini 5 (2019) Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META TITLE: 7.9-inch iPad Mini 5 (2019) Repair Services
+META DESCRIPTION: 7.9-inch iPad Mini 5 (2019) Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META KEYWORDS: 7.9-inch iPad Mini 5 (2019) Repair
+FRIENDLY URL: 7.9-inch-iPad-Mini-5-(2019)-repair-services
+
+
+Create a category with the following fields:
+NAME: iPad Air (2019) Repair Services
+DESCRIPTION: iPad Air (2019) Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META TITLE: iPad Air (2019) Repair Services
+META DESCRIPTION: iPad Air (2019) Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META KEYWORDS: iPad Air (2019) Repair
+FRIENDLY URL: iPad-Air-(2019)-repair-services
+
+
+Create a category with the following fields:
+NAME: 10.2-inch iPad (2019) Repair Services
+DESCRIPTION: 10.2-inch iPad (2019) Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META TITLE: 10.2-inch iPad (2019) Repair Services
+META DESCRIPTION: 10.2-inch iPad (2019) Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META KEYWORDS: 10.2-inch iPad (2019) Repair
+FRIENDLY URL: 10.2-inch-iPad-(2019)-repair-services
+
+
+Create a category with the following fields:
+NAME: 11-inch iPad Pro (2020) Repair Services
+DESCRIPTION: 11-inch iPad Pro (2020) Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META TITLE: 11-inch iPad Pro (2020) Repair Services
+META DESCRIPTION: 11-inch iPad Pro (2020) Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META KEYWORDS: 11-inch iPad Pro (2020) Repair
+FRIENDLY URL: 11-inch-iPad-Pro-(2020)-repair-services
+
+
+Create a category with the following fields:
+NAME: 12.9-inch iPad Pro (2020) Repair Services
+DESCRIPTION: 12.9-inch iPad Pro (2020) Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META TITLE: 12.9-inch iPad Pro (2020) Repair Services
+META DESCRIPTION: 12.9-inch iPad Pro (2020) Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.
+META KEYWORDS: 12.9-inch iPad Pro (2020) Repair
+FRIENDLY URL: 12.9-inch-iPad-Pro-(2020)-repair-services
+
+
+
+
+
+
