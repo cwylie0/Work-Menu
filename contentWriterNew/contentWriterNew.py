@@ -145,7 +145,7 @@ collectionName = ''
 def createpages(device):
     for service in services:
         serviceName = device + " " + service
-        collectionName = device + " Repair Services"
+        collectionName = device + " Repair"
         cost = services[service]     
         taxRule = 9   
         tags = collectionName
@@ -237,12 +237,12 @@ def createpages(device):
 
 def displayoutput(device):    
     print('Create a collection with the following fields:')
-    print('TITLE: ' + device + ' Repair Services' )
-    print('DESCRIPTION: ' + device + ' Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.') 
-    print('SEO PAGE TITLE: ' + device + ' Repair Services')
-    print('SEO DESCRIPTION: ' + device + ' Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.') 
+    print('TITLE: ' + device + ' Repair' )
+    print('DESCRIPTION: ' + device + ' Repair completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.') 
+    print('SEO PAGE TITLE: ' + device + ' Repair')
+    print('SEO DESCRIPTION: ' + device + ' Repair completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.') 
     
-    print('URL and HANDLE: ' + deviceURL + '-repair-services')
+    print('URL and HANDLE: ' + deviceURL + '-repair')
     print('\n')
     print('Upload the file below into that product collection.')
     print("FILE CREATED: " + outputFileName)

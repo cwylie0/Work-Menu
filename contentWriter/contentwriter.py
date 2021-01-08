@@ -90,7 +90,7 @@ a.append(row)
 def createpages(device):
     for service in services:
         serviceName = device + " " + service
-        category = device + " Repair Services"
+        category = device + " Repair"
         cost = services[service]
         taxRule = 9
         tags = serviceName
@@ -169,12 +169,12 @@ def createpages(device):
 
 def displayoutput(device):    
     print('Create a category with the following fields:')
-    print('NAME: ' + device + ' Repair Services' )
-    print('DESCRIPTION: ' + device + ' Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.') 
-    print('META TITLE: ' + device + ' Repair Services')
-    print('META DESCRIPTION: ' + device + ' Repair services are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.') 
+    print('NAME: ' + device + ' Repair' )
+    print('DESCRIPTION: ' + device + ' Repair completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.') 
+    print('META TITLE: ' + device + ' Repair')
+    print('META DESCRIPTION: ' + device + ' Repair are completed by experienced iFixYouri technicians. From broken screens to water damage, battery replacement and more.') 
     print('META KEYWORDS: ' + device + ' Repair')
-    print('FRIENDLY URL: ' + deviceURL + '-repair-services')
+    print('FRIENDLY URL: ' + deviceURL + '-repair')
     print('\n')
     print('Upload the file below into that product category.')
     print("FILE CREATED: " + outputFileName)

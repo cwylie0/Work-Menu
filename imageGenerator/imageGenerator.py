@@ -1,7 +1,7 @@
 import glob
 from PIL import Image
 
-foregrounds = ["HomeButtonRepair.png", "HeadphoneJackRepair.png", "FrontCameraRepair.png", "BatteryReplacement.png", "DiagnosticService.png", "ChargingPortRepair.png", "LoudspeakerRepair.png", "MicrophoneRepair.png", "PowerButtonRepair.png", "EarSpeakerRepair.png", "VolumeButtonRepair.png", "WaterDamage.png", "VibrateButtonRepair.png"]
+foregrounds = ["HomeButtonRepair.png", "HeadphoneJackRepair.png", "FrontCameraRepair.png", "BatteryReplacement.png", "DiagnosticService.png", "ChargingPortRepair.png", "LoudspeakerRepair.png", "GlassRepair.png", "MicrophoneRepair.png", "PowerButtonRepair.png", "EarSpeakerRepair.png", "VolumeButtonRepair.png", "WaterDamage.png", "VibrateButtonRepair.png"]
 
 def prettyPictures():
     print ("")
@@ -14,6 +14,7 @@ def prettyPictures():
         background = Image.open(device)
         filename = device.replace(".png", "-") + fg
         print (filename)
+        
         Image.alpha_composite(background, foreground).save(filename)
 
 """
