@@ -72,7 +72,8 @@ def yelpify():
     for key in yelpURLs:
         # query the website and return the html to the variable ‘page’
         quote_page = yelpURLs[key]
-        page = urllib.request.urlopen(quote_page)
+        req = Request(quote_page, headers={'User-Agent': 'Mozilla/5.0'}) #adds a user agent to not get blocked
+        page = urlopen(req).read()  
     
         # parse the html using beautiful soup and store in variable `soup`
         soup = BeautifulSoup(page, 'html.parser')
@@ -80,8 +81,9 @@ def yelpify():
         # get the rating
         # rating_box = soup.find('div', attrs={'class':'i-stars'})    
         rating = str(soup) #convert the bs4 to class str  
-        rating = rating[(rating.find('"@type": "AggregateRating", "ratingValue":')+ 43) : (rating.find('"@type": "AggregateRating", "ratingValue":')+ 43) + 3]
-
+        rating = rating[(rating.find('AggregateRating')+31) : (rating.find('AggregateRating')+31) + 3]   
+        rating = rating.replace(",", "")
+        rating = rating.replace('"', "")
 
         review_count_box = soup.find('span', attrs={'itemprop':'reviewCount'})    
         review_count = str(review_count_box) #convert the bs4 to class str   
@@ -108,21 +110,18 @@ def googlify():
     
         # get the rating
         rating = str(soup) #convert the bs4 to string
+        # print(rating)
+        # print(soup.encode("utf-8"))
         
-        print(soup.encode("utf-8"))
+        #get the star rating
+        firstSlice = rating[(rating.find('out of 5" class=')-4) : (rating.find('out of 5" class=')-4) + 4]               
+        #print(firstSlice)
         
-        #since google changes div names, it takes two slices to get to the rating 
-        firstSlice = rating[(rating.find('class="oqSTJd">')+15) : (rating.find('class="oqSTJd">')+15) + 3]             
-        #rate = firstSlice[(firstSlice.find('.')-1) : (firstSlice.find('.')-1) + 3]
+        #get the rating count
+        secondSlice = rating[(rating.find('out of 5" class=')+102) : (rating.find('out of 5" class=')+102) + 3]         
+        #print(secondSlice)        
 
-        #since google changes div names, it takes two slices to get to the rating 
-        secondSlice = rating[(rating.find('role="img"><span style="width:63px"></span></div> <span>(')+57) : (rating.find('role="img"><span style="width:63px"></span></div> <span>(')+57) + 3]          
-              
-        
-        if secondSlice == "set" or key == "Winter Park":
-            print("FLAG")
-            secondSlice = rating[(rating.find('out of 5" class=')+88) : (rating.find('out of 5" class=')+88) + 3]
-
+        firstSlice = firstSlice.replace(" ", "")
         secondSlice = secondSlice.replace(")", "")
         secondSlice = secondSlice.replace(" ", "")
 
@@ -183,12 +182,10 @@ def outputCSV(tableData):
 def scrape():
     printOutputInfo()
     printHeader("Yelp")
-    #yelpify()
+    yelpify()
     printHeader("Google")
     googlify() 
     printHeader("Facebook")
-    #fbify()
-    # printTable(a)   
+    fbify()
+    #printTable(a)   
     outputCSV(a)
-
-scrape()

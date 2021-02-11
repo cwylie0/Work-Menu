@@ -1,7 +1,7 @@
 # Text menu in Python
 from yelp.yelp import *
 from reviewResponse.reviewResponse import *
-#from RatingScraper.rating import *
+from RatingScraper.rating import *
 from imageGenerator.imageGenerator import *
 from contentWriterNew.contentWriterNew import runtings
 #from chromebookWriter.chromebookWriter import chromebookWrite
@@ -13,11 +13,11 @@ from PriceScraper.priceScraper import scrapePrices
 
 def print_menu():  # Your menu design here
     print("")
-    print("<<<<< IFIXYOURI SCRIPTS V 2.3 >>>>>")
+    print("<<<<< IFIXYOURI SCRIPTS V 2.4 >>>>>")
     print("----------- by cwylie0 ------------")
     print("1. YELP AUTORESPONDER")
     print("2. 5-STAR REVIEW RESPONDER")
-    #print("3. RATINGS SCRAPER")
+    print("3. RATINGS SCRAPER")
     print("4. DEVICE SERVICE PAGE CREATOR") 
     print("5. SERVICE PAGE IMAGE GENERATOR")  
     #print("6. CHROMEBOOK SERVICE PAGE CREATOR")
@@ -34,8 +34,8 @@ while ans:
     elif ans == "2":
         generateResponse()
     elif ans == "3":
-    #    scrape()
-         print("")
+        scrape()
+        print("")
     elif ans == "4":
         runtings()
     elif ans == "5":
