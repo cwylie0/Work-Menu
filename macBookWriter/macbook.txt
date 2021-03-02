@@ -1,0 +1,43 @@
+check all top case repair graphics in macbook air and macbook orig
+check collection name capitalization
+
+
+MacBook Pro 
+
+A1278
+A1286
+A1297
+A1706
+A1707
+A1708
+
+
+
+1425 and 1502
+lcd housing assembly text
+
+
+2018
+MacBook Pro (13-inch, 2018, Four Thunderbolt 3 ports) MacBookPro15,2 A1989
+MacBook Pro (15-inch, 2018) MacBookPro15,1 A1990
+
+2019
+MacBook Pro (13-inch, 2019, Four Thunderbolt 3 ports) MacBookPro15,2 A1989
+MacBook Pro (15-inch, 2019) MacBookPro15,1 A1990, MacBookPro15,3 A1990
+MacBook Pro (13-inch, 2019, Two Thunderbolt 3 ports) MacBookPro15,4 A2159
+MacBook Pro (16-inch, 2019) MacBookPro16,1 A2141, MacBookPro16,4  
+
+2020
+MacBook Pro (13-inch, 2020, Four Thunderbolt 3 ports) MacBookPro16,2 A2251
+MacBook Pro (13-inch, 2020, Two Thunderbolt 3 ports) MacBookPro16,3 A2289
+MacBook Pro (13-inch, M1, 2020) MacBookPro17,1 A2338
+
+
+
+1989
+1990
+2159
+2141
+2251
+2289
+2338

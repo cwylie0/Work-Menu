@@ -58,10 +58,10 @@ questions = [
 ]
 
 services = {
-    'Screen Repair': 459.99,
-    'Keyboard Repair': 199.99,    
-    'Battery Replacement': 189.99,    
-    'Hinge Repair': 199.99,
+    'Screen Repair': 529.99,
+    'Keyboard Repair': 139.99,    
+    'Battery Replacement': 139.99,    
+    'Hinge Repair': 139.99,
     'Bottom Cover Repair': 139.99,
     'Top Cover Repair': 469.99    
 }
@@ -199,7 +199,7 @@ def MacBookWrite():
     #device = input("ENTER DEVICE: ")
     #deviceURL = device.replace(" ", "-")
     
-    devices = ["A1286"]    
+    devices = ["A1425"]    
     screenSize = "15"
     
     #outputFileName = deviceURL + '.csv'
