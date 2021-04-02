@@ -35,9 +35,9 @@ diagnostic = [
 ]
 
 shipping = [
-    "<h3>Shipping Your DEVICE</h3><p>Send your DEVICE Chromebook to iFixYouri via your chosen shipping method. Please ship your device in a sturdy, secure box. If you hear it rattling around in the box, add some more padding. Please do not include cases, cables, or accessories. Standard shipping is covered by us, as well as $100 insurance. Faster shipping and extra insurance coverage can be purchased during checkout.</p>",
-    "<h3>Shipping Your Chromebook</h3><p>Faster shipping options and extra insurance protection are available for purchase if you'd like. When packaging your device, use a sturdy, secure box. You do not need to ship us your cases, cables, or accessories.</p>",
-    "<h3>Shipping Your DEVICE</h3><p>Free shipping and $100 of insurance are included. You may purchase faster shipping options and additional insurance protection during checkout. That's up to you. Don't send us your cables, charges, or cases, please. We have plenty here already :) Just package your DEVICE Chromebook in a secure box and affix the provided label.</p>",
+    "<h3>Shipping Your DEVICE</h3><p>Use the calculator below to estimate shipping. Please ship your device in a sturdy, secure box. If you hear it rattling around in the box, add some more padding. Please do not include cases, cables, or accessories. Standard shipping is covered by us, as well as $100 insurance. Faster shipping and extra insurance coverage can be purchased during checkout.</p>",
+    "<h3>Shipping Your Chromebook</h3><p>The shipping cost calculator below can be used to price your shipping cost. Faster shipping options and extra insurance protection are available for purchase if you'd like. When packaging your device, use a sturdy, secure box. You do not need to ship us your cases, cables, or accessories.</p>",
+    "<h3>Shipping Your DEVICE</h3><p>You may purchase faster shipping options and additional insurance protection during checkout. That's up to you. Don't send us your cables, charges, or cases, please. We have plenty here already :) Just package your DEVICE Chromebook in a secure box and affix the provided label.</p>",
     "<h3>Shipping Your Chromebook</h3><p>We email you a printable shipping label, and include $100 of insurance protection. If you would like faster shipping or more insurance coverage, you have the option to upgrade during checkout. </p>"
 ]
 
@@ -63,7 +63,9 @@ services = {
     'Battery Replacement': 199.99,    
     'Hinge Repair': 199.99,
     'Bottom Cover Repair': 199.99,
-    'Top Cover Repair': 199.99    
+    'Top Cover Repair': 199.99, 
+    'Diagnostic Service': 0.00,
+    'Water Damage Repair': 0.00
 }
 
 def printwriterheader():
@@ -202,12 +204,12 @@ def chromebookWrite():
     #device = input("ENTER DEVICE: ")
     #deviceURL = device.replace(" ", "-")
     
-    devices = ["Toshiba 13 CB30-A3120", "Toshiba 13 CB30-B3121", "Toshiba 13 CB30-B3122", "Toshiba 13 CB35", "Toshiba 13 CB35-B3330", "Toshiba 13 CB35-B3340", "Toshiba 13 CB35-C3300"]
+    devices = ["Acer", "Asus", "Dell", "HP", "Lenovo", "Samsung", "Toshiba"]
 
     #devices = ["Acer 11 C710","Acer 11 C720","Acer 11 C721-25AS","Acer 11 C730E","Acer 11 C731","Acer 11 C731T","Acer 11 C732","Acer 11 C732T","Acer 11 C733","Acer 11 C738T","Acer 11 C740","Acer 11 C771","Acer 11 C771T","Acer 11 C910","Acer 11 CB3-111","Acer 11 CB3-131","Acer 11 CB311","Acer 11 CB311-8HT","Acer 11 CB5-132T","Acer 11 R721T","Acer 11 R751T","Acer 11 R752T","Acer 13 C810","Acer 13 CB5-311","Acer 13 CB5-312T","Acer 14 CB3-431","Acer 14 CB514-1H","Acer 14 CP5-471","Acer 15 C910","Acer 15 CB3-531","Acer 15 CB3-532","Acer 15 CB5-571","Acer 15 CB515","Asus 10 C100PA", "Asus 10 C101PA", "Asus 11 C200MA","Asus 11 C201PA", "Asus 11 C202SA", "Asus 11 C204E","Asus 11 C213SA", "Asus 11 C213SA-YS02-S", "Asus 11 C223N","Asus 13 C300MA", "Asus 13 C300SA", "Asus 13 C301SA","Asus 14 C423N", "Asus 15 C523N", "Dell 11 3100", "Dell 11 3120", "Dell 11 3180", "Dell 11 3181", "Dell 11 3189", "Dell 11 5190", "Dell 11 CB1C13", "Dell 13 3380", "Dell 13 7310", "HP 11 2010 NR", "HP 11 CB2", "HP 11 G2", "HP 11 G3", "HP 11 G4", "HP 11 G4 EE", "HP 11 G5", "HP 11 G5 (Touch)", "HP 11 G5 EE", "HP 11 G6 EE", "HP 11 G7 EE", "HP 11 G7 EE Touch", "HP 11 G8 EE", "HP 11 V-Series", "HP 11 X360 2-in-1", "HP 11 X360 G1 EE", "HP 11 X360 G2 EE", "HP 11 X360 G3 EE", "HP 13 G1", "HP 14 AK-Series", "HP 14 G3", "HP 14 G4", "HP 14 G5", "HP 14 G6", "HP 14 Q-Series", "HP 14 SMB", "HP 14 X013DX", "Lenovo 11 100e", "Lenovo 11 100e Gen 2", "Lenovo 11 100S", "Lenovo 11 300e", "Lenovo 11 300e Gen 2", "Lenovo 11 500e", "Lenovo 11 500e Gen 2", "Lenovo 11 C330", "Lenovo 11 N20P", "Lenovo 11 N21", "Lenovo 11 N22 (Non-Touch)", "Lenovo 11 N22 (Touch)", "Lenovo 11 N23 (Non-Touch)", "Lenovo 11 N23 (Touch)", "Lenovo 11 N23 Yoga", "Lenovo 11e", "Lenovo 13 Thinkpad", "Lenovo 14 N42", "Lenovo 14 N42 (Touch)", "Lenovo 14e (81MH)", "Lenovo Yoga 11e","Samsung 11 XE303C12", "Samsung 11 XE310XBA", "Samsung 11 XE500C12", "Samsung 11 XE500C13", "Samsung 11 XE501C13", "Samsung 11 XE503C12", "Samsung 11 XE550C22", "Samsung 12 XE500C21", "Samsung 12 XE510C25", "Samsung 12 XE550C22", "Samsung 13 XE503C32", "Toshiba 13 CB30-A3120", "Toshiba 13 CB30-B3121", "Toshiba 13 CB30-B3122", "Toshiba 13 CB35", "Toshiba 13 CB35-B3330", "Toshiba 13 CB35-B3340", "Toshiba 13 CB35-C3300"]
 
     #outputFileName = deviceURL + '.csv'
-    outputFileName = 'toshibaChromebooks.csv'
+    outputFileName = 'diagChromebooks.csv'
 
     for device in devices:
         createpages(device)
@@ -218,3 +220,4 @@ def chromebookWrite():
         writer.writerows(a) 
 
 chromebookWrite()
+
