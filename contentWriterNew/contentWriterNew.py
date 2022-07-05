@@ -76,7 +76,7 @@ questions = [
     "<h3>Contact/Support</h3><p>Call iFixYouri @ <a href=\"tel:888-494-4349\">888-494-4349</a> or <a href=\"mailto:support@ifixyouri.com\">support@ifixyouri.com</a>. If you have any questions, you can write them down in the chatbot below.</p><p>NOTE: Computer pictured above may not necessarily match your exact model. Your replacement part or parts will match your specific device.</p>",
     "<h3>Questions? Just Ask.</h3><p>Do you have any questions about SERVICE from iFixYouri? Just ask them in the box below, and we'll get back to you. Alternatively, you can always reach us via our support phone number <a href=\"tel:888-494-4349\">888-494-4349</a> or email <a href=\"mailto:support@ifixyouri.com\">support@ifixyouri.com</a></p><p>NOTE: Computer pictured above may not necessarily match your exact model. Your replacement part or parts will match your specific device.</p>",
     "<h3>We're Here to Help!</h3><p>iFixYouri can be reached at <a href=\"tel:888-494-4349\">888-494-4349</a> or <a href=\"mailto:support@ifixyouri.com\">support@ifixyouri.com</a>. Questions may be asked using the chatbot or question form below.</p><p>NOTE: Computer pictured above may not necessarily match your exact model. Your replacement part or parts will match your specific device.</p>",
-    "<h3>Contact/Support</h3><p>Call iFixYouri @ <a href=\"tel:888-494-4349\">888-494-4349</a> or <a href=\"mailto:support@ifixyouri.com\">support@ifixyouri.com</a>. You can also ask questions using the chatbot or question form below.</p><p>NOTE: Computer pictured above may not necessarily match your exact model. Your replacement part or parts will match your specific device.</p>"
+    "<h3>Contact/Support</h3><p>Call iFixYouri @ <a href=\"tel:888-494-4349\">888-494-4349</a> or <a href=\"mailto:support@ifixyouri.com\">support@ifixyouri.com</a>. You can also ask questions using the chatbot or question form below.</p>"
 ]
 
 '''
@@ -90,7 +90,7 @@ services = {
 services = {
     'Diagnostic Service': 0.00,
     'Glass Repair': 349.99,
-    'Glass & LCD Repair': 369.99,
+    'Glass & LCD Repair': 429.99,
     'Battery Replacement': 99.99,
     'Charging Port Repair': 79.99,
     'Front Camera Repair': 99.99,
