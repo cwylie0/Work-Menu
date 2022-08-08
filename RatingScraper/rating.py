@@ -11,12 +11,10 @@ import os
 # specify the url
 yelpURLs = {
 # Orlando Stores
-"Altamonte Springs": "https://www.yelp.com/biz/ifixyouri-iphone-ipad-and-ipod-repair-altamonte-springs-2",
 "Downtown Orlando": "https://www.yelp.com/biz/i-fix-your-i-orlando-9",
 
 #Palm Beach Stores
 "Donald Ross": "https://www.yelp.com/biz/ifixyouri-iphone-ipad-and-ipod-repair-jupiter",
-"Indiantown": "https://www.yelp.com/biz/i-fix-your-i-smart-device-repair-jupiter-6",
 "Northlake": "https://www.yelp.com/biz/i-fix-your-i-palm-beach-gardens-5",
 "West Palm": "https://www.yelp.com/biz/ifixyouri-iphone-ipad-and-ipod-repair-west-palm-beach-5"
 }
@@ -24,12 +22,10 @@ yelpURLs = {
 # specify the url
 googURLs = {
 #Orlando Stores
-"Altamonte Springs": "https://www.google.com/search?q=iFixYouri+Altamonte+Springs",
 "Downtown Orlando": "https://www.google.com/search?q=iFixYouri+Colonial+Dr",
 
 #Palm Beach Stores
 "Donald Ross": "https://www.google.com/search?q=iFixYouri+Donald+Ross",
-"Indiantown": "https://www.google.com/search?q=iFixYouri+Indiantown+Road",
 "Northlake": "https://www.google.com/search?q=iFixYouri+Northlake",
 "West Palm": "https://www.google.com/search?q=iFixYouri+West+Palm"
 }
@@ -37,12 +33,10 @@ googURLs = {
 # specify the url
 fbURLs = {
 #Orlando Stores
-"Altamonte Springs": "https://www.facebook.com/IFixYouriAltamonteSprings/reviews/",
 "Downtown Orlando": "https://www.facebook.com/Ifixyouri.Downtown.Orlando/reviews/",
 
 #Palm Beach Stores
 "Donald Ross": "https://www.facebook.com/iFixYouri.Jupiter.DonaldRoss/reviews/",
-"Indiantown": "https://www.facebook.com/iFixYouriJupiterIndiantown/reviews/",
 "Northlake": "https://www.facebook.com/iFixYouri.Northlake/reviews/",
 "West Palm": "https://www.facebook.com/ifixyouri.west.palm.beach/reviews/"
 }
@@ -88,9 +82,10 @@ def yelpify():
         review_count_box = soup.find('span', attrs={'itemprop':'reviewCount'})    
         review_count = str(review_count_box) #convert the bs4 to class str   
     
-        reviewCount = review_count[(review_count.find('Count')+ 7) : (review_count.find('Count')+ 7) + 3]
+        reviewCount = review_count[(review_count.find('data-font-weight="semibold"')- 7) : (review_count.find('data-font-weight="semibold"')- 7) + 30]
         reviewCount = reviewCount.replace("<", "")
         reviewCount = reviewCount.replace("/", "")
+        reviewCount = "0"
 
         print(key + ", " + rating + ", " + reviewCount)
         b=[key, rating, reviewCount]
@@ -118,7 +113,7 @@ def googlify():
         #print(firstSlice)
         
         #get the rating count
-        secondSlice = rating[(rating.find('out of 5" class=')+102) : (rating.find('out of 5" class=')+102) + 3]         
+        secondSlice = rating[(rating.find('out of 5" class=')+88) : (rating.find('out of 5" class=')+88) + 3]         
         #print(secondSlice)        
 
         firstSlice = firstSlice.replace(" ", "")
@@ -146,7 +141,7 @@ def fbify():
         # get the rating
         rating = str(soup) #convert the bs4 to string
                
-        rate = rating[(rating.find('lightweight_score_explainer')) - 51 : (rating.find('lightweight_score_explainer')) - 48]
+        rate = rating[(rating.find('opinion_count')) + 5 : (rating.find('opinion_count')) + 25]
         rate = rate.replace(" ", "")
         rate = re.sub('[^0-9.]','', rate)
         if rate == "": 
@@ -187,5 +182,5 @@ def scrape():
     googlify() 
     printHeader("Facebook")
     fbify()
-    #printTable(a)   
+    # printTable(a)   
     outputCSV(a)

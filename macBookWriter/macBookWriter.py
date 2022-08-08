@@ -1,17 +1,3 @@
-"""
-Device Service Page Content Generator
-
-INPUT: user input device name
-OUTPUT: .csv version of a set of unique service cateogory pages for a specific device, in the following template:
-
-optional video, h2 title, optional disclaimer, intro paragraph, diagnostic paragraph, shipping paragraph, warranty paragraph
-
-POSSIBLE EDITS: Replace 90-day with 1-year for device contains iPad or iPhone
-lowercase handle
-add collections
-
-"""
-
 import random
 import csv
 
@@ -63,12 +49,12 @@ services = {
     'Battery Replacement': 139.99,    
     'Hinge Repair': 139.99,
     'Bottom Cover Repair': 139.99,
-    'Top Cover Repair': 469.99    
+    'Top Cover Repair': 469.99
 }
 
 def printwriterheader():
     print("")
-    print("MACBOOK SERVICE PAGE CREATOR V 1.0")
+    print("MACBOOK SERVICE PAGE CREATOR V 2.0")
     print("----------------------------------")
     print("")
 
@@ -136,7 +122,7 @@ def createpages(device):
             l.append("<p>Screen or LCD Replacement is what you need if your DEVICE has a cracked display or your MacBook Pro is displaying horizontal or vertical bars, or nothing at all. Please note that some models require a top cover (lid) replacement while replacing the display. Upon diagnosing your device, a technician will inform you if any other additional repairs are needed. No additional repairs will be started without your approval.</p>")
             l.append(videoDiv.replace("YOUTUBEURL",
                                   "https://www.youtube.com/embed/tF_zuMX4ixI"))
-            #imageSrc= "https://cdn.shopify.com/s/files/1/0296/6703/3181/files/MacBook ProLCDScreenReplacement.jpg?v=1605626283"            
+            #imageSrc= "https://cdn.shopify.com/s/files/1/0296/6703/3181/files/MacBook ProLCDScreenReplacement.jpg?v=1605626283"          
 
         if service == "Keyboard Repair":
             l.append("<p>This is the service you need if your MacBook Pro's keys are not functioning properly. If you suspect your keys are not working due to water or liquid damage, please choose that service instead. If any evidence of liquid damage is found, your technician will contact you to discuss repair options. iFixYouri does not proceed with repairs discovered after diagnosis without your consent.</p>")
@@ -199,8 +185,8 @@ def MacBookWrite():
     #device = input("ENTER DEVICE: ")
     #deviceURL = device.replace(" ", "-")
     
-    devices = ["A1425"]    
-    screenSize = "15"
+    devices = ["A2140"]    
+    screenSize = "16"
     
     #outputFileName = deviceURL + '.csv'
     outputFileName = screenSize + "-MacBook-Pro-" + devices[0] + ".csv"
