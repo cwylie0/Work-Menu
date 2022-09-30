@@ -10,35 +10,23 @@ import os
 
 # specify the url
 yelpURLs = {
-# Orlando Stores
-"Downtown Orlando": "https://www.yelp.com/biz/i-fix-your-i-orlando-9",
-
 #Palm Beach Stores
 "Donald Ross": "https://www.yelp.com/biz/ifixyouri-iphone-ipad-and-ipod-repair-jupiter",
-"Northlake": "https://www.yelp.com/biz/i-fix-your-i-palm-beach-gardens-5",
-"West Palm": "https://www.yelp.com/biz/ifixyouri-iphone-ipad-and-ipod-repair-west-palm-beach-5"
+"Northlake": "https://www.yelp.com/biz/i-fix-your-i-palm-beach-gardens-5"
 }
 
 # specify the url
 googURLs = {
-#Orlando Stores
-"Downtown Orlando": "https://www.google.com/search?q=iFixYouri+Colonial+Dr",
-
 #Palm Beach Stores
 "Donald Ross": "https://www.google.com/search?q=iFixYouri+Donald+Ross",
-"Northlake": "https://www.google.com/search?q=iFixYouri+Northlake",
-"West Palm": "https://www.google.com/search?q=iFixYouri+West+Palm"
+"Northlake": "https://www.google.com/search?q=iFixYouri+Northlake"
 }
 
 # specify the url
 fbURLs = {
-#Orlando Stores
-"Downtown Orlando": "https://www.facebook.com/Ifixyouri.Downtown.Orlando/reviews/",
-
 #Palm Beach Stores
 "Donald Ross": "https://www.facebook.com/iFixYouri.Jupiter.DonaldRoss/reviews/",
-"Northlake": "https://www.facebook.com/iFixYouri.Northlake/reviews/",
-"West Palm": "https://www.facebook.com/ifixyouri.west.palm.beach/reviews/"
+"Northlake": "https://www.facebook.com/iFixYouri.Northlake/reviews/"
 }
 
 a = [["LOCATION", 'YELP RATING', 'YELP REVIEWS','GOOGLE RATING','GOOGLE REVIEWS', 'FB RATING', 'FB REVIEWS']]
