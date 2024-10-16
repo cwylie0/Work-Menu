@@ -16,7 +16,7 @@ import random
 import csv
 
 servicesB = {
-    'Diagnostic Service', 'Glass Repair', 'Glass & LCD Repair', 'Battery Replacement', 'Charging Port Repair', 'Front Camera Repair', 'Headphone Jack Repair', 'Home Button Repair', 'Loud Speaker Repair', 'Microphone Repair', 'Power Button Repair', 'Rear Camera Repair', 'Volume Button Repair', 'Water Damage Repair'
+    'Diagnostic Service', 'Glass Repair', 'Battery Replacement', 'Charging Port Repair', 'Front Camera Repair', 'Loud Speaker Repair', 'Microphone Repair', 'Power Button Repair', 'Rear Camera Repair', 'Volume Button Repair', 'Water Damage Repair'
 }
 disclaimer = "<p>&nbsp;</p><p><strong>*NOTE: If you decline repairs for diagnostic or water damage treatment or your device is deemed non-repairable, you will be responsible for shipping and handling.</strong></p>"
 
